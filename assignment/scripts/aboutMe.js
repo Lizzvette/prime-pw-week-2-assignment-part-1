@@ -57,11 +57,8 @@ if ( pets >= allowedPets ){
 }else {
     console.log("Oh no, I have too many pets");
 }
-
-// STRETCH GOALS:  (.......HAVING ISSUES WITH THIS.....SEE BOOK & FREECODE......)
-
+// STRETCH GOALS:  
 // 16 - Make a variable called `mostPets` and a conditional that
-//
 // correctly checks the `pets` and `friendsPets` variables, and
 //
 // assigns the highest value to `mostPets`. There's several possibilities --
@@ -70,20 +67,11 @@ if ( pets >= allowedPets ){
 // console.log `mostPets` after the conditional has run.
 
 let mostPets = 0;
+mostPets = mostPets + friendsPets;
 
-//if (pets <= friendsPets || pets >= friendsPets ){
-// ****  Ask how to assign which is higher in a short version. ****
-console.log(mostPets);
-console.log();
-
-
-else if (pets < friendsPets)
-mostPets
-console.log();
-console.log();
-//console.log(mostPets)
-else
-console.log()
+if (pets <= friendsPets) {
+        console.log(mostPets);
+    }
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
@@ -91,18 +79,21 @@ console.log()
 //      "Third is the one with the polka dot dress" if your lucky number is 3
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
-    switch ("switch"){
+
+//    ‘ “Something lucky” ‘ to create quotes in a sentence - could use back tick.
+    
+switch (luckyNumber){
         case 1: 
-        console.log('First is the worst /' if your lucky number is 1');
+        console.log(` "First is the worst" if your lucky number is 1`);
         break;
         case 2: 
-        console.log('Second is the best /' if your lucky number is 2');
+        console.log(`"Second is the best" if your lucky number 2`);
         break;
         case 3: 
-        console.log('Third is the one with the polka dot dress' if your lucky number is 3);
+        console.log('if your lucky number is 3');
         break;
         default:
-        console.log("Luck is what happens when preparation meets opportunity");    
+        console.log('Luck is what happens when preparation meets opportunity');    
     }
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
@@ -110,4 +101,8 @@ console.log()
     console.log("Adventures are great!");
 }else{
     console.log("How about we stay home?");
+    
+    conditional ? expression_when_true : expression_when_false;
 }*/
+adventurous = false ? "Adventures are great!" : "How about we stay home?";
+console.log(adventurous);
